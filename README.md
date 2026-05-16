@@ -1,28 +1,21 @@
 # WeatherSnap
 
-An Android (Kotlin) app that fetches live weather from **Open‑Meteo**, lets you capture a **CameraX** photo as evidence, compresses it, and stores reports locally in **Room**.
+Android app for live weather reports with CameraX photo evidence, built with Kotlin + Jetpack Compose.
 
-## Tech stack
-- Kotlin + Coroutines/Flow
-- Jetpack Compose (Material 3)
-- MVVM + StateFlow + ViewModel
-- Hilt (DI)
-- Navigation Compose
-- Retrofit + Gson + OkHttp (debug-only logging)
-- Room Database
-- CameraX (no camera intent)
+## Tech Stack
+Kotlin, Jetpack Compose, MVVM, Hilt, Room, CameraX, Retrofit, Navigation Compose, Material 3
 
-## Setup
-1. Open the project folder `WeatherSnap/` in Android Studio.
-2. Sync Gradle.
-3. Run the `app` configuration on an emulator/device (Android 7.0+).
-4. Grant **Camera** permission when prompted on the camera screen.
+## Setup & Run
 
-If you run Gradle from the terminal on macOS/Linux, you may need:
-```bash
-chmod +x ./gradlew
-```
+1. Clone: `git clone `https://github.com/Meet00028/WeatherSnap.git``
+2. Open `WeatherSnap/` in Android Studio
+3. Let Gradle sync complete
+4. Run on emulator (API 34+) or device (Android 7.0+)
+5. Grant Camera permission when prompted
+
+No API key required — uses Open-Meteo (free).
 
 ## Notes
-- Weather is fetched from Open‑Meteo (no API key).
-- Reports are stored locally in Room (no cloud sync).
+- No mock data — all weather is live
+- CameraX only, no camera intent
+- Reports saved in Room DB
